@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modulos", "Modulos", "{0F12E63B-B9B4-49BF-A6E1-E6E5162DD752}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RASTREOmw", "RASTREOmw\RASTREOmw.csproj", "{7E4AA881-D1BD-4EB6-A98D-CF93D2C11633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGeneration.dOOdads_2005", "MyGeneration.dOOdads\MyGeneration.dOOdads_2005.csproj", "{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{B5D83DB0-C4C9-4F95-B6EF-28157B7F1E83}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RASTREO_WebSite", "RASTREO_WebSite\", "{43EEB599-12E3-4118-AF20-72A97EC926D9}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "Svn"
+		SccAuxPath = "Svn"
+		SccLocalPath = "Svn"
+		SccProvider = "SubversionScc"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{B5D83DB0-C4C9-4F95-B6EF-28157B7F1E83}|ColorPicker.dll;{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}|RASTREOMyGen.dll;{7E4AA881-D1BD-4EB6-A98D-CF93D2C11633}|RASTREOmw.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/RASTREOadminsite"
+		Debug.AspNetCompiler.PhysicalPath = "RASTREO_WebSite\"
+		Debug.AspNetCompiler.TargetPath = "..\..\..\inetpub\RASTREOadminsite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "true"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/RASTREOadminsite"
+		Release.AspNetCompiler.PhysicalPath = "RASTREO_WebSite\"
+		Release.AspNetCompiler.TargetPath = "..\..\..\inetpub\RASTREOadminsite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "true"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "8282"
+		VWDDynamicPort = "false"
+		VWDVirtualPath = "/RASTREO_WebSite"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E4AA881-D1BD-4EB6-A98D-CF93D2C11633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E4AA881-D1BD-4EB6-A98D-CF93D2C11633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E4AA881-D1BD-4EB6-A98D-CF93D2C11633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E4AA881-D1BD-4EB6-A98D-CF93D2C11633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5D83DB0-C4C9-4F95-B6EF-28157B7F1E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5D83DB0-C4C9-4F95-B6EF-28157B7F1E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5D83DB0-C4C9-4F95-B6EF-28157B7F1E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5D83DB0-C4C9-4F95-B6EF-28157B7F1E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43EEB599-12E3-4118-AF20-72A97EC926D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43EEB599-12E3-4118-AF20-72A97EC926D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43EEB599-12E3-4118-AF20-72A97EC926D9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{43EEB599-12E3-4118-AF20-72A97EC926D9}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7E4AA881-D1BD-4EB6-A98D-CF93D2C11633} = {0F12E63B-B9B4-49BF-A6E1-E6E5162DD752}
+		{8666C149-F8D1-47CE-B5E2-BEE0BC844A9A} = {0F12E63B-B9B4-49BF-A6E1-E6E5162DD752}
+		{B5D83DB0-C4C9-4F95-B6EF-28157B7F1E83} = {0F12E63B-B9B4-49BF-A6E1-E6E5162DD752}
+	EndGlobalSection
+EndGlobal

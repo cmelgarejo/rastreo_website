@@ -1,0 +1,139 @@
+﻿//<!-- Funciones comunes para funcionamiento de las paginas
+//var g_updatelimit = 30;
+var g_seconds = 0;
+function countdown_timer(timer) {
+    if (g_seconds < timer) {
+        g_seconds = timer;
+        setTimeout("countdown_timer(" + (g_seconds - 1) + ")", 1);
+        return;
+    }
+    var countdowntimer = document.getElementById("cd_timer");
+    if (countdowntimer != null) {
+        if (g_seconds > 0) {
+            g_seconds -= 1;
+            countdowntimer.value = "Prox. actualización en: " + g_seconds;
+            setTimeout("countdown_timer(" + g_seconds + ")", 1000);
+        } else {
+            countdowntimer.value = "Actualizando...";
+            //g_seconds = g_updatelimit;
+        }
+    } 
+}
+//countdown_timer()
+
+function cronometro(timer) {
+    //    if (seconds <= timer) {
+    //        seconds = timer;
+    //        //return;
+    //    }
+    var countdowntimer = document.getElementById("cronometro");
+    if (countdowntimer != null) {
+        if (timer < 0) {
+            timer = 1;
+        } else {
+            timer++;
+            countdowntimer.value = "Elapsados: " + timer + " seg."
+        }
+        setTimeout("cronometro(" + timer + ")", 1000);
+    }
+}
+//cronometro()
+
+function GetValorFromObj(NameObj) {
+    var retS = '';
+    sourceObj = $get(NameObj);
+    if (sourceObj != null)
+        retS = sourceObj.value;
+    //alert("GetValorObj: " + retS)
+    return retS;
+}
+
+function seguro_que()
+{
+     var seguroque = confirm("Seguro que va eliminar el registro?.");
+     if (seguroque  == true)
+     {
+         return true;
+     }
+     else
+     {
+         return false;
+     }
+}
+ 
+function DisableSaveControl(controlId) {
+    document.getElementById(controlId).disabled = true;
+    document.getElementById(controlId).value = "Espera, Por favor...";
+    document.getElementById(controlId).title = "Por favor aguarde...";
+}
+
+function DisableControl(controlId) {
+    document.getElementById(controlId).disabled = true;
+}
+
+function DisableControl_SetTimeout(controlId, interval) {
+    setTimeout("DisableSaveControl('" + controlId + "')", interval);
+}
+
+function DisableSave(control) {
+    DisableControl_SetTimeout(control.id, 100);
+}
+ 
+function AbrirDialogo(myPage, w, h) {
+    var WinSettings = "status=yes,scrollbars=yes,help=no,center=yes";
+    if (w != null && h != null) {
+        WinSettings += ",width=" + w + ",height=" + h;
+    }
+    else {
+        WinSettings += ",height=600";
+    }
+    // LA LINEA DE ABAJO ES MAGICA - Abre ventana modal :D
+    //var MyArgs = window.showModalDialog(myPage, new Array(0), WinSettings);
+    var MyArgs = window.open(myPage, 'popup', WinSettings);
+    
+}
+
+var captureKeys = function(ev) {
+    ev = ev || window.event;          // obtiene el evento del browser
+    kCode = ev.keyCode || ev.which;   // obtiene el evento del browser
+
+    //        in ie, when pressing the ctrl + shift + key, it gives the key 
+    //        code for the capitalized key (probably because shift is pressed) 
+    //        in ns pressing ctrl, shift and another key doesn't change the keycode
+    //        thus, the || and two different numbers
+
+    if (ev.ctrlKey && ev.altKey && kCode == 105) {    // ctrl+alt+i
+        return false;  // make it so the browser ignores key combo
+    }
+
+    if (ev.ctrlKey && ev.altKey && kCode == 116) {    // ctrl+alt+t
+        return false;  // make it so the browser ignores key combo
+    }
+
+    if (ev.ctrlKey && ev.altKey && kCode == 99) {    // ctrl+alt+c
+        return false;  // make it so the browser ignores key combo
+    }
+
+    if (ev.ctrlKey && ev.altKey && kCode == 100) {    // ctrl+alt+d
+        return false;  // make it so the browser ignores key combo
+    }
+
+    if (ev.ctrlKey && ev.altKey && kCode == 109) {    // ctrl+alt+o
+        return false;  // make it so the browser ignores key combo
+    }
+
+    if (ev.ctrlKey && ev.altKey && kCode == 111) {    // ctrl+alt+m
+        return false;  // make it so the browser ignores key combo
+    }
+}
+
+//Para hacer visible cualquier control
+function setVisible(control) {
+    if (document.getElementById(control) != null) {
+        var ctrl = document.getElementById(control);
+        if (ctrl != null) {
+            ctrl.visible = true;
+        }
+    }
+}
+//-->

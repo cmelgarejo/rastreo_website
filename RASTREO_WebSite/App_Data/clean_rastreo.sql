@@ -1,0 +1,6 @@
+--truncate table rastreo_geocercas;
+--truncate table rastreo_hoja_de_ruta;
+--truncate table rastreo_hoja_de_ruta_puntos;
+--truncate table rastreo_template_hoja_de_ruta;
+--truncate table rastreo_template_puntos_hoja_de_ruta;
+--truncate table rastreo_hojaderuta_has_vehiculo;

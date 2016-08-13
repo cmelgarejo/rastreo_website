@@ -1,0 +1,407 @@
+﻿/*@charset "utf-8";*/
+/* CSS Document */
+body {
+	background-image: url(Imagenes/adminbg.jpg);
+	background-repeat: repeat-x;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	min-height: 365px;
+	font-family:Segoe, Nina, Arial Narrow, arial, Helvetica, sans-serif; font-size: 12px;  color: #606060;
+}
+img { border: none;}
+
+
+#wrap { width: 960px; margin: auto;}
+/* TOP */
+#top { height: 95px; }
+.logo { float:left; width: 300px;}
+.menutop { float: right; width: 588px; background-image: url(Imagenes/bg-top-menu.jpg); background-repeat:no-repeat; height: 95px;}
+.menubox1 { clear:both; }
+.menuitem { float:left; padding: 8px 30px 0 30px; }
+.menuitemLOGOUT { float:right; padding: 8px 30px 0px 30px; }
+.menublanco { color:#FFF; font-weight:bold; font-size:x-small; }
+#top a { color: #FFF;}
+#top a:hover { color: #FFF; text-decoration:none;background:#999999; }
+.menubox2 { clear:both; padding-top: 10px;}
+.menuitem2 { float:left; padding: 0px 0px 0px 0px;}
+.sec { border:none; background:none; width: 20px; height: 20px;}
+.sec2 { border: 1px solid #999999; background:none; width: 20px; height: 17px;}
+.btn { border: 1px solid #CCCCCC; background-color: #666666; padding-left: 5px; padding-right: 5px; height: 22px; color:#FFF;}
+/* MEDIO */
+#medio { width: 960px; height: 378px;}
+.btnplus  { background-image: url(Imagenes/plus.jpg); background-position:center; background-repeat:no-repeat; border: none; background-color:Transparent; cursor: pointer; }
+.btnplus2  { background-image: url(Imagenes/plus.jpg); background-position:left; background-repeat:no-repeat; border: 3px solid #606060; background-color: Transparent; cursor: pointer; vertical-align:middle;}
+.btnclose { background-image: url(Imagenes/sailir.jpg); background-position:center; background-repeat:no-repeat; border: none; background-color:Transparent; cursor: pointer; }
+/* CONTENIDO */
+#contenido { margin-top: 30px; margin-bottom: 30px;}
+.td { border: 1px solid #6C6C6C; padding: 3px; color:White; font-size:smaller;}
+.row1 { background-color:#000000; border: none; color:#FFFFFF;}
+.row2 { }
+.row3 { background-color: #e5e5e5;}
+
+/* PIE */
+#pie { width: 100%; height: 73px; background-image:url(Imagenes/pie.jpg); background-repeat:no-repeat; background-position:center;}
+.footnotes { padding: 25px;}
+#pie a { color: #606060; text-decoration:none; }
+#pie a:hover { color: #FFF; text-decoration: underline; }
+
+/* ENVIAR */
+#enviar { width: 400px; height: 350px; border: 1px solid #999999; background-color:#FFF;}
+.btn1 { border: 1px solid #CCCCCC; background-color: #333333; padding-left: 5px; padding-right: 5px; height: 22px; color:#FFF;}
+.enviartit  { margin: 10px;}
+.enviartit2  { margin: 10px; font-size: 10px; color:#CCCCCC; }
+.enviartit3  { margin: 10px 0 0 10px; font-weight:bold;}
+
+
+ #div_mainGPS_grid
+ { 
+ 	height:180px;
+	overflow:auto; 
+	border: solid 1px #C0C4CC;
+	background-color:#C0C4CC; 	
+ }
+
+ .divBusVUELTA
+ { 
+ 	height:100px;
+	overflow:auto; 
+	border: solid 1px Blue; 
+	background-color:#C0C4CC; 	
+ }
+
+ .divBusIDA
+ { 
+ 	height:100px;
+	overflow:auto; 
+	border: solid 1px Green; 
+	background-color:#C0C4CC; 	
+ }
+
+.countdown
+{
+    background-color:Navy;
+    color:White;
+    font-size:smaller;
+    font-family:Nina, Segoe, Arial Narrow, Arial ,Tahoma;
+    border: solid 2px black;
+    width:125px;
+}
+
+.PopUp
+{
+position:absolute;
+left:0px; top:0px;
+background-color: #CCCCCC;
+border-width: 1px;
+border-color: #606060;
+border-style: solid; 
+padding: 1px;
+}
+
+.modalBackground {
+background-color: Gray;
+/*filter: alpha(opacity=70);*/
+opacity: 0.7;
+}
+
+ #map
+ {
+     width: 100%;
+     height: 365px;
+ } 
+ 
+ #mapbus_ida
+ {
+     width: 99.7%;
+     height: 350px;
+ } 
+ #mapbus_vuelta
+ {
+     width: 99.3%;
+     height: 350px;
+ } 
+
+/* Map Specific*/
+A
+{
+    cursor:pointer;
+    font-size:x-small;
+    font-weight:bold;
+    color:Black;
+}
+
+
+A:link {text-decoration: none;}
+A:visited {text-decoration: none;}
+A:active {text-decoration: none}
+A:hover {text-decoration: underline; }
+
+.rastreo_linkbuttons
+{
+    font-size:small;
+    font-weight:bold;
+    background-color:#024579;
+    color: White;
+    border: solid 1px gray;
+}
+
+.rastreo_nowloading
+{
+    font-size:smaller;
+    font-weight:bold;
+    background-color:#024579;
+    color: White;
+    border: solid 1px gray;
+}
+
+.MyCalendar .ajax__calendar_container {
+    border:2px solid Navy;
+    background-color: #CCCCCC;
+    color: #024579;
+}
+.MyCalendar .ajax__calendar_other .ajax__calendar_day,
+.MyCalendar .ajax__calendar_other .ajax__calendar_year {
+    color: black;
+}
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_month,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_year {
+    color: #FF5522;
+    font-weight:bold;
+}
+.MyCalendar .ajax__calendar_active .ajax__calendar_day,
+.MyCalendar .ajax__calendar_active .ajax__calendar_month,
+.MyCalendar .ajax__calendar_active .ajax__calendar_year {
+    color: black;
+    font-weight:bolder;
+}
+
+.rastreo_botones_save
+{
+    cursor:pointer;
+    font-weight:bold;
+    background-color:#047F09;
+    color:#FAEBD7;
+}
+
+.rastreo_botones_cancel
+{
+    font-weight:bold;
+    background-color:#7F0904;
+    color:#FAEBD7;
+}
+
+.rastreo_botones_save:hover
+{
+    font-weight:bolder;
+    background-color:#919191;
+    color:#047F09;
+}
+
+.rastreo_botones_cancel:hover
+{
+    font-weight:bolder;
+    background-color:#919191;
+    color:#7F0904;
+}
+
+.rastreo_botones
+{
+    font-size:smaller;
+    font-weight:bold;
+    background-color:#024579;
+    color:#FAEBD7;
+}
+
+/*
+body {
+	min-width: 960px;
+	min-height: 600px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align:left;
+	font-family: Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	color: Black;
+	background-color: #778899;
+}		
+
+.body {
+	min-width: 1016px;
+	min-height: 628px;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+	text-align:left;
+	font-family: Verdana, "Lucida Grande", Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	color: Black;
+	background-color: #778899;
+}		
+*/
+
+h1, h2, h3, h4, h5, h6 
+{
+	color: #0066CB;
+}
+
+h2
+{
+    font-size: 1.1em;
+}
+
+h1 
+{
+	font-size: 2.0em;
+	font-weight: normal;
+}
+
+#RASTREO_mainwrapper {			
+	margin: 0 auto;
+	width: 960px;
+	top:0px;
+	text-align: left;
+	background-color: #FFFFFF;
+	min-height:400px;
+}
+
+#RASTREO_myHeader    {
+	margin: 0 auto;	
+	background-image: url(Imagenes/adminbg.jpg);
+	background-repeat: repeat-x;
+	background-color:#FFFFFF;
+}
+
+#RASTREO_myHeader_RASTREAR    {
+	/*background-image:url('Imagenes/rastrear.png'); */
+	background-position:left;
+	background-repeat:no-repeat; 
+	background-color:#FFFFFF;
+}
+
+
+.Mensaje_de_error
+{
+	border-bottom: solid 1px #024579;
+	border-top: solid 1px #024579;
+	background:Red;
+	color:yellow;
+	font-family: Nina, Segoe, Arial Narrow, Arial, Verdana;
+	font-size:10pt;
+	font-weight:bolder;
+}
+
+.TextBox
+{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+    text-transform: uppercase;
+    border:solid 2px black;
+	color:black;
+	font-family:Nina, Segoe, Arial Narrow, Arial, Verdana;
+	font-size:8pt;
+}
+
+.TextBox:focus
+{
+	border:solid 2px #024579;
+	color:black;
+	font-family:Nina, Segoe, Arial Narrow, Arial, Verdana;
+	font-size:8pt;
+    background-color:#FFFF66;
+}
+
+.TextBox:hover
+{
+    border:solid 2px #024579;    
+    background-color:#FFFF99;
+}
+
+.CheckBoxes
+{
+	color:black;
+	font-family:Nina, Segoe, Arial Narrow, Arial, Verdana;
+	font-size:7pt;
+}
+
+.TextBoxMAIL
+{
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-moz-border-radius-topleft:5px;
+	-moz-border-radius-topright:5px;
+    border:solid 2px #024579;
+	color:black;
+	font-family:Nina, Segoe, Arial Narrow, Arial, Verdana;
+	font-size:8pt;
+}
+
+
+.TextBoxMAIL:focus
+{
+	border:solid 2px black;
+	color:black;
+	font-family:Nina, Segoe, Arial Narrow, Arial, Verdana;
+	font-size:8pt;
+    background-color:#FFFF66;
+}
+
+.TextBoxMAIL:hover
+{
+    border:solid 2px black;    
+    background-color:#FFFF99;
+}
+
+.Label
+{
+	background:transparent;
+	color:black;
+	font-family:Nina, Segoe, Arial Narrow, Arial, Verdana;
+	font-size:8pt;
+}
+
+.OpcionTarea
+{
+	background:transparent;
+	color:White;
+	font-family:Nina, Segoe, Arial Narrow, Arial, Verdana;
+	font-size:8pt;
+	cursor: pointer;
+}
+
+.DropDownList
+{
+    cursor:pointer;
+    border: solid 1px black;
+	background:white;
+	color:black;
+	font-family:Nina, Segoe, Arial Narrow, Arial, Verdana;
+	font-size:9pt;
+}
+
+.DropDownList:focus
+{
+	border: solid 1px blue;
+	color:black;
+	font-family:Nina, Segoe, Arial Narrow, Arial, Verdana;
+	font-size:9pt;
+	font-weight:bold;
+	background-color:#FFEE66;
+}
+
+.DropDownList:hover
+{
+	border: solid 1px #024579;
+    background-color:#FFFF99;
+}
+
+.modalBackground {
+	background-color: Black;
+	/*filter:alpha(opacity=70);
+	opacity:0.7;*/
+}

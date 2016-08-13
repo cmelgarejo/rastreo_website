@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BoundFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.HeaderText" xml:space="preserve">
+    <value>Fecha y hora</value>
+  </data>
+  <data name="BoundFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.HeaderText" xml:space="preserve">
+    <value>Fecha y hora</value>
+  </data>
+  <data name="btn_OpenSendMailResource1.Text" xml:space="preserve">
+    <value>Enviar posicion por mail</value>
+  </data>
+  <data name="btn_OpenSendMailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAgregarVehiculoResource1.Text" xml:space="preserve">
+    <value>Agregar vehiculo(s) a la lista</value>
+  </data>
+  <data name="btnAgregarVehiculoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAjustarResource1.Text" xml:space="preserve">
+    <value>Ajustar intérvalo</value>
+  </data>
+  <data name="btnAjustarResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCANCELPTOResource1.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnCANCELPTOResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCloseMailResource1.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnCloseMailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCloseSettingsResource1.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="btnCloseSettingsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnEliminarVehiculoResource1.Text" xml:space="preserve">
+    <value>Eliminar vehiculo(s) de la lista</value>
+  </data>
+  <data name="btnEliminarVehiculoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnPreferenciasResource1.Text" xml:space="preserve">
+    <value>Reporte Automatico</value>
+  </data>
+  <data name="btnPreferenciasResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSAVEPTOResource1.Text" xml:space="preserve">
+    <value>Guardar referencia</value>
+  </data>
+  <data name="btnSAVEPTOResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveSettingsResource1.Text" xml:space="preserve">
+    <value>Guardar preferencias</value>
+  </data>
+  <data name="btnSaveSettingsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSendMailResource1.Text" xml:space="preserve">
+    <value>Enviar posicion</value>
+  </data>
+  <data name="btnSendMailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chk_RA_OnOffResource1.Text" xml:space="preserve">
+    <value>Activar reportes automaticos</value>
+  </data>
+  <data name="chk_RA_OnOffResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkReferencia_ptorefResource1.Text" xml:space="preserve">
+    <value>Deteccion de ingreso a la referencia &lt;br /&gt;[separar los mail con &lt;b&gt;;&lt;/b&gt; o &lt;b&gt;,&lt;/b&gt;]</value>
+  </data>
+  <data name="chkReferencia_ptorefResource1.ToolTip" xml:space="preserve">
+    <value>Chequee esta casilla si desea que se le avise cuando un vehiculo ingrese a este punto de referencia.</value>
+  </data>
+  <data name="chkReferenciasResource1.Text" xml:space="preserve">
+    <value>Ingresar referencias</value>
+  </data>
+  <data name="chkReferenciasResource1.ToolTip" xml:space="preserve">
+    <value>Chequee esta casilla para ingresar las posiciones actuales de sus vehiculos como referencias.</value>
+  </data>
+  <data name="ddlHojaDeReferencia_ptorefResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlSendMailToResource1.ToolTip" xml:space="preserve">
+    <value>Elija que de vehiculo enviar posicion</value>
+  </data>
+  <data name="errMsgsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="errMsgsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridVehiculoSeleccionadoResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridVehiculoSeleccionadoResource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gridVehiculoSeleccionadoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gv_Lista_de_Todos_los_VehiculosResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gv_Lista_de_Todos_los_VehiculosResource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gv_Lista_de_Todos_los_VehiculosResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbRefiResource1.Text" xml:space="preserve">
+    <value>
+                            Referencias
+                        </value>
+  </data>
+  <data name="lbRefiResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="listVehiculosInvolucradosResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkIOResource1.Text" xml:space="preserve">
+    <value>STATUS</value>
+  </data>
+  <data name="lnkIOResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkIOSELResource1.Text" xml:space="preserve">
+    <value>STATUS</value>
+  </data>
+  <data name="lnkIOSELResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkTareasResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkTareasResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkTareasResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkTareasResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mailsSENDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>RASTREO Paraguay - Control de vehiculos y posiciones GPS</value>
+  </data>
+  <data name="pnlStatusIOSELResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlStatusIOSELResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlTareasResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlTareasResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlTareasResource2.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlTareasResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RASTREO_LOGOUTResource1.Text" xml:space="preserve">
+    <value>Salir del sistema</value>
+  </data>
+  <data name="RASTREO_LOGOUTResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource10.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource10.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource10.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource11.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource11.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource11.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource12.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource12.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource12.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource13.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource13.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource13.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource14.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource14.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource14.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource15.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource15.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource15.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource16.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource16.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource16.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource3.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource3.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource3.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource4.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource4.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource4.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource5.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource5.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource5.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource6.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource6.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource6.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource7.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource7.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource7.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource8.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource8.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource8.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource9.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource9.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource9.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescripcion_ptorefResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtDescripcion_ptorefResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHORA_ENVIO_REPORTEResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtHORA_ENVIO_REPORTEResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLATResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLATResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLONResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLONResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMailReferencias_ptorefResource1.ToolTip" xml:space="preserve">
+    <value>Ingrese en esta casilla los mail a donde será enviados los avisos cuando ingrese un vehículo a esta referencia.</value>
+  </data>
+  <data name="txtMailSettingsResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMailSettingsResource1.ToolTip" xml:space="preserve">
+    <value>Puede ingresar sus mail separados por ',' o ':'</value>
+  </data>
+  <data name="txtMensajeCustomResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMensajeCustomResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMETROS_REDONDA_ptorefrefResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMETROS_REDONDA_ptorefrefResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNombre_ptorefResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNombre_ptorefResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTimeoutResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTimeoutResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnlang" xml:space="preserve">
+    <value>Cambiar Idioma</value>
+  </data>
+  <data name="mailsSENDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDatosResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDatosResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDatosResource2.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDatosResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPrefsResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPrefsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPuntoReferenciaResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlPuntoReferenciaResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlSendMailResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlSendMailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlStatusIOResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlStatusIOResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMailReferencias_ptorefResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource3.HeaderText" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+</root>

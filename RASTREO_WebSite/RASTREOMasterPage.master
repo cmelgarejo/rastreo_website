@@ -1,0 +1,131 @@
+<%@ Master Language="VB" CodeFile="RASTREOMasterPage.master.vb" Inherits="RASTREOMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Autor: Ing. Adolfo Bresanovich || Director de R&D RASTREO Paraguay -->
+<head id="headerRASTREO" runat="server">
+<title>Rastreo Satelital PARAGUAY - Cuidamos Lo Tuyo</title> 
+<meta name="Title" content="Rastreo Satelital en Paraguay" /> 
+<meta name="Author" content="http://www.clrsoft.net/" /> 
+<meta name="Subject" content="Rastreo Satelital PARAGUAY - Cuidamos Lo Tuyo" /> 
+<meta name="Description" content="Somos una empresa que ofrece soluciones especializadas 
+apropiadas a las necesidades, por medio de tecnología avanzada y eficientes recursos humanos, 
+para todas aquellas personas que confían en nosotros." /> 
+<meta name="Keywords" content="rastreo satelital, rastreo satelital de moviles, rastreo satelital de vehiculos, 
+rastreo satelital de flotas, seguridad de vehiculos, alarmas de vehiculos, alarmas de autos, rastreo satelital de autos,
+rastreo satelital de camiones, localizacion satelital, localizacion satelital de flotas,
+localizacion satelital de moviles, localizacion satelital de autos, localizacion satelital de camiones,
+software de rastreo satelital, software de rastreo de vehiculos, software de rastreo satelital de flotas,
+sistema de rastreo satelital, sistema de rastreo satelital de flotas, rastreo satelital en paraguay, 
+rastreo satelital de flotas en paraguay, alarmas para autos, alarmas para camiones, gps, gps para flotas, 
+gps para moviles, gps para vehiculos, gps para camiones, rastreo paraguay, rastreo de autos, rastreo de flotas, 
+rastreo de camiones, rastreo de vehiculos, sistema de rastreo gps, dispositivo de rastreo." /> 
+<link rel="shortcut icon" href="~/RASTREO.ico" type="image/x-icon"/>
+<link rel="icon" href="~/RASTREO.ico" type="image/x-icon"/>
+</head>
+<body>
+    <form id="RASTREOmainForm" runat="server">
+    <ajaxToolkit:ToolkitScriptManager ID="RASTREOToolScriptManager" ScriptMode="Release" runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="./WebKit.js" />
+        </Scripts>    
+    </ajaxToolkit:ToolkitScriptManager>    
+    <div id="RASTREO_myHeader" >       
+        <asp:ContentPlaceHolder id="header_ContentPlaceHolder" runat="server">
+            <!-- CABECERA--> 
+            <div id="top"> 
+            
+   	          <div class="logo"><a href="#"><img alt="CentralGPS - The tracking solution" src="App_Themes/CENTRAL/Imagenes/logo.png" width="282" height="95" /></a></div> 
+   	          <%--<asp:DropDownList ID="ddlLang" AutoPostBack="true" runat="server">
+   	            <asp:ListItem Text="Español" Value="es-PY"></asp:ListItem>
+   	            <asp:ListItem Text="English" Value="en-US"></asp:ListItem>
+   	            <asp:ListItem Text="Portugues" Value="pt-BR"></asp:ListItem>
+   	          </asp:DropDownList>--%>
+                <%  If Not miUsuario Is Nothing and Not Request.Url.AbsolutePath.Contains("Login") Then%>
+                    <%  If miUsuario.Empleado Then%>
+                <div class="menutop"> 
+
+        	        <div class="menubox1"> 
+                      <div class="menuitem">Usuario: <span class="menublanco"><% Response.Write(mi_usuario) %></span></div> 
+                     <div class="menuitem"><img alt=" X " src="App_Themes/CENTRAL/Imagenes/sailir.jpg" align="absmiddle" /> 
+                      <asp:LinkButton runat="server" ID="RASTREO_LOGOUT" PostBackUrl="~/Login.aspx" 
+                              ForeColor =White >Salir del sistema</asp:LinkButton>
+                      </div>
+                    </div> 
+                    <div class="menubox2">  
+                            <div>
+                            <label style="font-size:smaller">Vehiculos DEMO: </label>
+                            <asp:Label runat="server" ID="lbCantidadVehiculosDEMO" ForeColor="Black" />
+                            <label style="font-size:smaller">Clientes Activos: </label>
+                            <asp:Label runat="server" ID="lbCantidadClientes" ForeColor="Black" />
+                            <label style="font-size:smaller">Vehiculos Activos: </label>
+                            <asp:Label runat="server" ID="lbCantidadVehiculos" ForeColor="Black" />
+                            </div>
+                    </div> 
+
+                </div> 
+                                    <% End If %>
+                <% End If  %> 
+          </div> 
+            <!-- CABECERA--> 
+            <script type="text/javascript" src="js/stmenu.js"></script>                    
+            <div id="divMENU" style="position: absolute; top: 72px; left: 0px; width:955px" align="center">
+                <%  If permiso_menu_admin Or permiso_menu_usuarios Then%>
+                        <%  If permiso_menu_admin Then%>
+                            <%-- Menu administracion --%>
+                            <script type="text/javascript">
+                            <!--
+                                stm_bm(["menu0eae", 900, "", "App_Themes/CENTRAL/Imagenes/blank.gif", 0, "", "", 0, 0, 0, 0, 50, 1, 0, 0, "", "650px", 0, 0, 1, 1, "default", "hand", "", 1, 25], this);
+                                stm_bp("p0", [0, 4, 0, 0, 0, 2, 1, 0, 100, "progid:DXImageTransform.Microsoft.Wipe(GradientSize=1.0,wipeStyle=1,motion=forward,enabled=0,Duration=0.20)", 5, "", -2, 90, 0, 0, "#7F7F7F", "transparent", "App_Themes/CENTRAL/Imagenes/050307.jpg", 3, 1, 1, "#999999"]);
+                                stm_ai("p0i0", [2, "", "rastreo.ico", "rastreo.ico", 16, 16, 0, "", "_self", "", "", "", "", 0, 0, 0, "", "", 0, 0, 0, 0, 1, "#FFFFFF", 1, "#FFFFFF", 1, "", "", 3, 3, 0, 0, "#FFFFFF", "#FFFFFF", "#333333", "#FFFFFF", "bold 9pt Arial", "bold 9pt Arial", 0, 0, "", "", "", "", 0, 0, 0], 30, 0);
+                                stm_aix("p0i1", "p0i0", [0, "Administración", "", "", -1, -1, 0, "", "_self", "", "", "", "", 1, 0, 0, "", "", 0, 0, 0, 1, 1, "#8D9CC4", 1, "#FFFFFF", 1, "", "", 0, 0, 0, 0, "#FFFFFF", "#FFFFFF", "#000000", "#FFFFFF", "bold 9pt 'Arial','Verdana'"], 80, 0);
+                                stm_bpx("p1", "p0", [1, 4, 0, 2, 0, 4, 1, 0, 100, "progid:DXImageTransform.Microsoft.Wipe(GradientSize=1.0,wipeStyle=1,motion=forward,enabled=0,Duration=0.50)", 5, "progid:DXImageTransform.Microsoft.Fade(overlap=.5,enabled=0,Duration=0.50)", -2, 60, 2, 6, "#CCCCCC", "#F3F2F9", "", 0]);
+                                stm_aix("p1i0", "p0i0", [0, "Personas", "", "", -1, -1, 0, "rastreo_admin/admin_personas_lista.aspx", "_self", "", "Aqui puede dar de alta o ubicar una persona y editar todos los datos asociados a la misma.", "", "", 1, 0, 0, "", "", 0, 0, 0, 0, 1, "#0000FF", 1, "#DCDAED", 0, "", "", 0, 0, 0, 0, "#FFFFFF", "#FFFFFF", "#333333", "#0000FF"]);
+                                stm_aix("p1i1", "p1i0", [0, "Vehiculos", "", "", -1, -1, 0, "rastreo_admin/admin_cliente_vehiculo_lista.aspx", "_self", "", "Aqui puede editar los vehiculos pertenecientes a un cliente especifico."]);
+                                stm_ep();
+                                stm_aix("p0i2", "p0i0", [0, "GPS", "", "", -1, -1, 0, "", "_self", "", "", "", "", 1, 0, 0, "", "", 0, 0, 0, 1, 1, "#8D9CC4", 1, "#FFFFFF", 1, "", "", 0, 0, 0, 0, "#FFFFFF", "#FFFFFF", "#000000"], 60, 0);
+                                stm_bpx("p2", "p1", []);
+                                stm_aix("p2i0", "p1i0", [0, "RASTREAR", "", "", -1, -1, 0, "GPSadmin.aspx", "_self", "", "Haga click aqui para empezar a RASTREAR."]);
+                                stm_aix("p2i1", "p1i0", [0, "Tipos de Equipo GPS", "", "", -1, -1, 0, "rastreo_admin/admingps_tipoequipo.aspx", "_self", "", "Es aqui donde puede dar de alta un equipo GPS."]);
+                                stm_aix("p2i2", "p1i0", [0, "Equipos GPS", "", "", -1, -1, 0, "rastreo_admin/admingps_equipogps_lista.aspx", "_self", "", "Es aqui donde puede dar de alta un equipo GPS."]);
+                                stm_aix("p2i3", "p1i0", [0, "Eventos de Tipo Equipo GPS", "", "", -1, -1, 0, "rastreo_admin/admingps_eventos_lista.aspx", "_self", "", "", "", "", 1, 0, 0, "", "", 0, 0, 0, 0, 1, "#FFFFFF"]);
+                                stm_aix("p2i4", "p1i0", [0, "Envio de comandos a equipos GPS", "", "", -1, -1, 0, "Envio_de_Comandos.aspx", "_blank", "", "Es aqui donde puede enviar comandos a los equipo GPS."]);
+                                stm_ep();
+                                stm_ep();
+                                stm_em();
+                            //-->
+                            </script>
+                        <% End If%>
+                        <%  If permiso_menu_usuarios Then%>
+                            <%-- Menu usuarios --%>
+                            <br />
+                            <script type="text/javascript">
+                            <!--
+                                stm_bm(["menu0eae", 900, "", "App_Themes/CENTRAL/Imagenes/blank.gif", 0, "", "", 0, 0, 0, 0, 50, 1, 0, 0, "", "100%", 0, 0, 1, 1, "default", "hand", "", 1, 25], this);
+                                stm_bp("p0", [0, 4, 0, 0, 0, 2, 1, 0, 100, "progid:DXImageTransform.Microsoft.Wipe(GradientSize=1.0,wipeStyle=1,motion=forward,enabled=0,Duration=0.20)", 5, "", -2, 90, 0, 0, "#7F7F7F", "transparent", "App_Themes/CENTRAL/Imagenes/050307.jpg", 3, 1, 1, "#999999"]);
+                                stm_ai("p0i0", [2, "", "rastreo.ico", "rastreo.ico", 16, 16, 0, "", "_self", "", "", "", "", 0, 0, 0, "", "", 0, 0, 0, 0, 1, "#FFFFFF", 1, "#FFFFFF", 1, "", "", 3, 3, 0, 0, "#FFFFFF", "#FFFFFF", "#333333", "#FFFFFF", "bold 9pt Arial", "bold 9pt Arial", 0, 0, "", "", "", "", 0, 0, 0], 30, 0);
+                                stm_aix("p0i1", "p0i0", [0, "GPS", "", "", -1, -1, 0, "", "_self", "", "", "", "", 1, 0, 0, "", "", 0, 0, 0, 1, 1, "#8D9CC4", 1, "#FFFFFF", 1, "", "", 0, 0, 0, 0, "#FFFFFF", "#FFFFFF", "#000000", "#FFFFFF", "bold 9pt 'Arial','Verdana'"], 80, 0);
+                                stm_bpx("p1", "p0", [1, 4, 0, 2, 0, 4, 1, 0, 100, "progid:DXImageTransform.Microsoft.Wipe(GradientSize=1.0,wipeStyle=1,motion=forward,enabled=0,Duration=0.50)", 5, "progid:DXImageTransform.Microsoft.Fade(overlap=.5,enabled=0,Duration=0.50)", -2, 60, 2, 6, "#CCCCCC", "#F3F2F9", "", 0]);
+                                stm_aix("p1i0", "p0i0", [0, "RASTREAR", "", "", -1, -1, 0, "MainGPS.aspx", "_self", "", "Haga click aqui para empezar a RASTREAR.", "", "", 1, 0, 0, "", "", 0, 0, 0, 0, 1, "#0000FF", 1, "#DCDAED", 0, "", "", 0, 0, 0, 0, "#FFFFFF", "#FFFFFF", "#333333", "#0000FF"]);
+                                stm_ep();
+                                stm_em();
+                            //-->
+                            </script>
+                        <% End If%>
+                <% End If%>
+            </div>           
+        </asp:ContentPlaceHolder>        
+    </div>
+    <div id="RASTREO_mainwrapper" >
+        <asp:ContentPlaceHolder id="main_ContentPlaceHolder" runat="server">        
+        </asp:ContentPlaceHolder>
+    </div>
+<!-- PIE--> 
+	<div id="pie" align="center"> 
+    	<div class="footnotes">&copy; 2010 Rastreo.com.py - <a href="http://www.rastreo.com.py/contactenos.php">Contactenos</a><% If not miUsuario is nothing Then%> - <a href="/manual/manual.pdf">Manual en linea<img src="App_Themes/CENTRAL/Imagenes/help-browser.png"  alt="[?]"/></a><%End If%></div> 
+    </div> 
+<!-- PIE-->     
+    </form>
+</body>
+</html>
